@@ -1,0 +1,124 @@
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #004E92;
+    margin-bottom: 10px;
+}
+
+form {
+    background: white;
+    border: 1px solid #CED4DA;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px; /* Max width for forms */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333333;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CED4DA;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Full width buttons */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker Blue */
+}
+
+.error {
+    color: #DC3545; /* Red */
+}
+
+.success {
+    color: #28A745; /* Green */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* Less padding on smaller screens */
+    }
+
+    form {
+        padding: 15px; /* Less padding inside form */
+    }
+
+    h1, h2 {
+        font-size: 1.5em; /* Smaller headings */
+    }
+
+    button {
+        padding: 8px; /* Smaller button padding */
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        font-size: 14px; /* Smaller input font */
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    form {
+        max-width: 80%; /* Wider forms on medium screens */
+    }
+
+    button {
+        padding: 10px 12px; /* Adjust button padding */
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        font-size: 15px; /* Adjust input font size */
+    }
+}
+
+/* Additional styling for containers */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content */
+    justify-content: center;
+}
+
+/* For balance and transaction sections */
+.balance, .transaction {
+    background: white;
+    border: 1px solid #CED4DA;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%; /* Full width for balance and transaction sections */
+    max-width: 500px; /* Max width for balance and transaction sections */
+}
